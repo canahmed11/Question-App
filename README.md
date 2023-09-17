@@ -14,6 +14,9 @@ Proje oluştururken https://start.spring.io/  Spring initializr dan seçtiklerim
 
 *Dependencies :* Web, Thymeleaf, Spring DevTools,  Spring Data JPA, MySql (kullandığım dependenciesler bunlar eğer ki sonradan eklenmesi gereken olursa https://mvnrepository.com/ sitesinden pom.xml dosyasına eklenebilir. pom.xml dosyasına ekledikten sonra pom.xml dosyasına çift tıklayıp Maven -> Reload Project'e tıklanmalı)
 
+![Screen Shot 2023-09-17 at 23 36 00](https://github.com/edakass/Question-App/assets/61595808/6ac218ec-57cb-4fc7-8510-71d7c95a1ef5)
+
+
 ### http://localhost:8109/
 
 Quiz'e başlamadan önce isim soy isim girilmeli
