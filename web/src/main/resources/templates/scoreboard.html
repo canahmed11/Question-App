@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+  <meta charset="UTF-8">
+  <title>Score Board</title>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+.navbar {
+  margin-bottom: 1rem;
+}
+.write {
+  font-size:16px;
+}
+.tex {
+  color : #FFF;
+  font-family: "Times New Roman", Times, san-serif;
+}
+.btn-text {
+  font-size:25px;
+}
+.text {
+  text-align: center;
+  font-size:45px;
+}
+.color {
+  background-color:cadetblue;
+}
+</style>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm" style="background-color: #D8BFD8;">
+  <a class="navbar-brand  tex" th:href="@{/}"><strong>Quiz App</strong> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link write" th:href="@{/}" style="margin-right:5px" ><strong>Home</strong> <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link write" th:href="@{/score}" style="margin-right:5px" ><strong>Score Board</strong> <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Main Container -->
+<div class="main-container container py-5 px-4">
+  <h4 class="bg-warning text-center mb-5 p-2">Top Scores Of All Time</h4>
+
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Score</th>
+    </tr>
+    </thead>
+    <tr th:each="score : ${scoreList}">
+      <!-- <tr th:each="score : ${scoreList}">:
+      Bu <tr> etiketi, Thymeleaf kullanarak bir döngü oluşturur ve scoreList isimli bir liste üzerinde dönerek
+      her bir öğrenci skorunu temsil eden satırlar oluşturur. -->
+      <td th:text="${score.username}"></td>
+      <!-- Bu <td> hücresi, her bir öğrencinin adını içerir.
+      Thymeleaf ifadesi (th:text) ile score.username ifadesi kullanılarak öğrenci adı dinamik olarak yerleştirilir.-->
+      <td th:text="${score.totalCorrect}"></td>
+      <!-- Bu <td> hücresi, her bir öğrencinin doğru cevap sayısını içerir.
+      Thymeleaf ifadesi (th:text) ile score.totalCorrect ifadesi kullanılarak doğru cevap sayısı dinamik olarak yerleştirilir. -->
+    </tr>
+  </table>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
