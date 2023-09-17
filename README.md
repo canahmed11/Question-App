@@ -55,11 +55,10 @@ public class ProductManagementComponent {
     
 } 
 
-
-```@Component
+@Component
 public class UserManagementComponent {
     // Kullanıcı yönetimi işlevlerini gerçekleştiren bileşen
-}```
+}
 
 
 
