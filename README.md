@@ -47,16 +47,16 @@ Hibernate: create table results (id integer not null auto_increment, total_corre
 
 Örnek bir senaryo düşünün: Bir çevrimiçi alışveriş uygulamasında "Ürün Yönetimi" ve "Kullanıcı Yönetimi" işlevleri bulunuyor. Her işlev kendi bileşenine sahip olabilir ve bu bileşenler, bu işlevleri yerine getirmek için kullanılabilir.
 
-@Component
+``` @Component
 public class ProductManagementComponent {
     // Ürün yönetimi işlevlerini gerçekleştiren bileşen
     // ...
-}
+}  ```
 
-@Component
+` @Component
 public class UserManagementComponent {
     // Kullanıcı yönetimi işlevlerini gerçekleştiren bileşen
     // ...
-}
+} `
 
 Bu bileşenler, Spring tarafından otomatik olarak oluşturulur ve Spring konteyneri tarafından yönetilir. Başka bileşenlerle işbirliği yapabilirler ve uygulama mantığını daha modüler hale getirirler. Bu sayede her işlevi ayrı ayrı geliştirmek ve bakımını yapmak daha kolay hale gelir.
