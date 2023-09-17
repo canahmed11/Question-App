@@ -32,7 +32,8 @@ Eğer isim boş girilirse
 
 ### http://localhost:8109/submit
 
-![Screen Shot 2023-09-17 at 23 07 22](https://github.com/edakass/Question-App/assets/61595808/0e9cc994-c376-4663-9484-4016be5cf4cc)
+![Screen Shot 2023-09-17 at 23 14 45](https://github.com/edakass/Question-App/assets/61595808/2213a233-0a47-4d3c-bfb8-8f55e43ba1ab)
+
 
 ### http://localhost:8109/score
 
