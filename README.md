@@ -47,7 +47,7 @@ Hibernate: create table results (id integer not null auto_increment, total_corre
 
 Örnek bir senaryo düşünün: Bir çevrimiçi alışveriş uygulamasında "Ürün Yönetimi" ve "Kullanıcı Yönetimi" işlevleri bulunuyor. Her işlev kendi bileşenine sahip olabilir ve bu bileşenler, bu işlevleri yerine getirmek için kullanılabilir.
 
-@Component
+```@Component
 public class ProductManagementComponent {
     // Ürün yönetimi işlevlerini gerçekleştiren bileşen
     // ...
@@ -56,7 +56,7 @@ public class ProductManagementComponent {
  @Component
 public class UserManagementComponent {
     // Kullanıcı yönetimi işlevlerini gerçekleştiren bileşen
-} 
+} ```
 
 
 
