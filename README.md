@@ -50,13 +50,12 @@ Hibernate: create table results (id integer not null auto_increment, total_corre
 ```@Component
 public class ProductManagementComponent {
     // Ürün yönetimi işlevlerini gerçekleştiren bileşen
-    // ...
 } 
 
  @Component
 public class UserManagementComponent {
     // Kullanıcı yönetimi işlevlerini gerçekleştiren bileşen
-} ```
+}```
 
 
 
