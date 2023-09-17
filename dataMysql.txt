@@ -1,0 +1,109 @@
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(1,
+       'Who founded java?',
+       'Joshua Bloch',
+       'Rod Johnson',
+       'James Gosling',
+       3,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(2,
+       'Who founded spring framework?',
+       'Joshua Bloch',
+       'Rod Johnson',
+       'James Gosling',
+       2,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(3,
+       'Who is the author of the effective java book?',
+       'Joshua Bloch',
+       'Rod Johnson',
+       'James Gosling',
+       1,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(4,
+       'Who is the author of the Faust',
+       'Erich Fromm',
+       'Tolstoy',
+       'Goethe',
+       3,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(5,
+       'Who is the author of the No Longer Human',
+       'Damon Young',
+       'Osamu Dazai',
+       'Edgar Allan Poe',
+       2,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(6,
+       'What is the equals() method in java?',
+       'We do not use it in java.',
+       'method is defined in Object class in Java and used for checking equality of two objects defined by business logic.',
+       'We use it to multiply numbers.',
+       2,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(7,
+       'What is MySQL?',
+       'IDE',
+       'MySQL is one of the most popular open-source DBMS (database management system).',
+       'Programming language',
+       2,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(8,
+       'How can we delete a column or a row in MySQL?',
+       'we can not',
+       'Insert Into table_name (id, student_name) values (1, "Eda")',
+       'ALTER TABLE table_name DROP column name;',
+       3,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(9,
+       'How to get current MySQL version?',
+       'SELECT VERSION ();',
+       'version',
+       '--version',
+       1,
+       -1);
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(10,
+       'Who founded java?',
+       'Joshua Bloch',
+       'Rod Johnson',
+       'James Gosling',
+       3,
+       -1);
+
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(11,
+       'How to display top 50 rows?',
+       'Limit=50;',
+       'SELECT * FROM LIMIT 0,50;',
+       'we can not',
+       2,
+       -1);
+
+
+insert into questions(ques_id, title, optionA, optionB, optionC, ans, chose)
+values(12,
+       'How can you see all indexes defined for a table?',
+       'SHOW INDEX FROM <tablename>;',
+       'we can not',
+       'SELECT INDEX',
+       1,
+       -1);
