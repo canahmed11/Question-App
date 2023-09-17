@@ -53,10 +53,11 @@ public class ProductManagementComponent {
     // ...
 }  ```
 
-` @Component
+ @Component
 public class UserManagementComponent {
     // Kullanıcı yönetimi işlevlerini gerçekleştiren bileşen
-    // ...
-} `
+} ```
+
+
 
 Bu bileşenler, Spring tarafından otomatik olarak oluşturulur ve Spring konteyneri tarafından yönetilir. Başka bileşenlerle işbirliği yapabilirler ve uygulama mantığını daha modüler hale getirirler. Bu sayede her işlevi ayrı ayrı geliştirmek ve bakımını yapmak daha kolay hale gelir.
